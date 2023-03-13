@@ -17,7 +17,7 @@ export class ImgComponent implements OnInit {
     this.img= this.imagenDefault;
   }
   imgLoaded(){
-    console.log('Loaded');
+    console.log('log hijo');
     this.loaded.emit();
   }
 
