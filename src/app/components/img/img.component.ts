@@ -7,8 +7,8 @@ import { Component, Input } from '@angular/core';
 })
 export class ImgComponent {
 
-  @Input() img: string = '.assets/images.descarga.jpg';
-  imageDefault='';
+  @Input() img: string = './assets/images/defaulf.png';
+  imagenDefault='';
   
   imgError(){
     this.img= this.imageDefault;
