@@ -8,7 +8,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class ImgComponent implements OnInit {
 
   @Input() img: string = '';
-  @Output() loaded = new EventEmitter();
+  @Output() loaded = new EventEmitter<string>();
   imagenDefault='./assets/images/defaulf.png';
   
   constructor(){}
@@ -18,7 +18,7 @@ export class ImgComponent implements OnInit {
   }
   imgLoaded(){
     console.log('log hijo');
-    this.loaded.emit();
+    this.loaded.emit(this.img);
   }
 
 
