@@ -11,7 +11,7 @@ export class ImgComponent {
   imagenDefault='./assets/images/defaulf.png';
   
   imgError(){
-    this.img= this.imageDefault;
+    this.img= this.imagenDefault;
   }
 
 
