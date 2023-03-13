@@ -13,6 +13,9 @@ export class ImgComponent {
   imgError(){
     this.img= this.imagenDefault;
   }
+  imgLoaded(){
+    console.log('Loaded');
+  }
 
 
 }
